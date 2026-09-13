@@ -1,0 +1,100 @@
+{
+  "format": "tinystudio-circuit",
+  "version": 2,
+  "meta": {
+    "author": "tinyStudio",
+    "created": "2026-09-13T20:56:19.476Z"
+  },
+  "parts": [
+    {
+      "id": "tinycore",
+      "type": "tinycore",
+      "bb": {
+        "x": 150,
+        "y": 240
+      }
+    },
+    {
+      "id": "resistor",
+      "type": "resistor",
+      "bb": {
+        "x": 520,
+        "y": 230
+      }
+    },
+    {
+      "id": "led",
+      "type": "led-generic-5mm",
+      "bb": {
+        "x": 364.8,
+        "y": 144
+      }
+    },
+    {
+      "id": "battery-aa_y90",
+      "type": "battery-aa",
+      "bb": {
+        "x": 422.4,
+        "y": 345.6,
+        "rotate": 180
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w_dwpazys4",
+      "from": "tinycore:SIG",
+      "to": "resistor:Pin 0",
+      "view": "bb",
+      "color": "#36c46b"
+    },
+    {
+      "id": "w_jk6ft2lq",
+      "from": "resistor:Pin 1",
+      "to": "led:anode",
+      "view": "bb",
+      "color": "#36c46b",
+      "route": [
+        "v-22.73",
+        "h-179.8",
+        "v-32.83"
+      ]
+    },
+    {
+      "id": "w_nytm1q9a",
+      "from": "led:cathode",
+      "to": "tinycore:GND",
+      "view": "bb",
+      "color": "#8b94c8",
+      "route": [
+        "h-265.24",
+        "v157.63",
+        "h52.4"
+      ]
+    },
+    {
+      "id": "w_y5nd51kn",
+      "from": "battery-aa_y90:-",
+      "to": "tinycore:D3",
+      "view": "bb",
+      "color": "#9b6cff",
+      "route": [
+        "h-45.29",
+        "v-80.66",
+        "h-92"
+      ]
+    },
+    {
+      "id": "w_egbxpufy",
+      "from": "tinycore:D4",
+      "to": "battery-aa_y90:+",
+      "view": "bb",
+      "color": "#ff4d6d",
+      "route": [
+        "h72.8",
+        "v78.91",
+        "h64.49"
+      ]
+    }
+  ]
+}
