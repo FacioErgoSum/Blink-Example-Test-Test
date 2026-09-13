@@ -7,7 +7,7 @@ const uint8_t LED = 13;  // Uno onboard LED (also fine on tinyCore)
 void setup() {
   pinMode(LED, OUTPUT);
   Serial.begin(9600);
-  Serial.println("Hello World");
+  Serial.println("Hello World!!!");
 }
 
 void loop() {
