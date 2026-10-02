@@ -1,7 +1,5 @@
 # Blink Example
 
-#Beginnings
-
 Blink an LED and report its state over serial — the tinyStudio demo project.
 
 Built with **tinyStudio** for the **tinyCore** ESP32-S3 board by MR.INDUSTRIES
